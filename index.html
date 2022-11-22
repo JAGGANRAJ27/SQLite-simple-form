@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+    &gt; <html xmlns="http://www.w3.org/1999/xhtml" &gt; <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>SQLite Simple Form</title>
+
+<body>
+    <center>
+        <h1 style="color: #fff;">Simple SQLite Database Form</h1>
+    </center>
+    <div id="main">
+        <input type="hidden" id="id" />
+        <input type="text" class="form-control" id="firstName" placeholder="Enter Your Firstname" /><br />
+        <input type="text" class="form-control" id="lastName" placeholder="Enter your Lastname" /><br />
+        <input type="text" class="form-control" id="phone" placeholder="Enter Mobile Number" /><br />
+        <button class="btn btn-outline-light" onClick="insertRecord()">Insert</button>
+        <button class="btn btn-outline-light" onClick="updateRecord()">Update</button>
+        <button class="btn btn-outline-light" onClick="resetForm()">Reset</button>
+        <button class="btn btn-outline-light" onClick="dropTable()">Delete Table</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
